@@ -1,0 +1,91 @@
+
+:root {
+  --border-color: #dadada;
+  --background-color: #eee;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+footer a {
+  display: block;
+  margin: 0 auto;
+}
+
+.app-description {
+  font-size: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.app {
+  flex: 1 0 auto;
+  max-width: 280rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.task-form {
+  margin-bottom: 3rem;
+}
+
+.task-form input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 0.35rem;
+  margin: .25rem 0;
+}
+
+.task-form input[type="checkbox"] {
+  margin: 0;
+}
+
+.task-form fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border: 2px solid var(--border-color);
+  background: var(--background-color);
+  padding: 1rem;
+}
+
+.task-form div:first-child {
+  border-right: 2px solid var(--border-color);
+  padding-right: 3rem;
+}
+
+.task-form div:last-child {
+  margin-left: 3rem;
+}
+
+
+.hint {
+  font-size: .8rem;
+  margin: 0.25rem 0 0;
+}
+
